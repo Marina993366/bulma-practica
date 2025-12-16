@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es" class="theme-light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica de Maquetación con Bulma</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a href="#" class="navbar-item">
+            <img src="https://picsum.photos/30" alt="logo">
+            <span>Mi sitio con Bulma</span>
+          </a>
+
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="my_navbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="my_navbar" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item">Inicio</a>
+            <a href="#proyectos" class="navbar-item">Proyectos</a>
+            <a href="#servicios" class="navbar-item">Servicios</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">Mas</a>
+              <div class="navbar-dropdown">
+                <a href="#blog" class="navbar-item">Blog</a>
+                <a href="#nosotros" class="navbar-item">Nosotros</a>
+                <a href="#contacto" class="navbar-item">Contacto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<!-- ===== SECCION HERO ===== -->
+    <section class="hero is-primary is-medium">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="columns is-vcentered">
+            <div class="column is-half">
+              <h1 class="title">Bienvenido a mi sitio web</h1>
+              <h2 class="subtitle">Construido con Bulma y Vite</h2>
+              <div>
+                <a href="" class="button is-primary is-light is-medium">Ver más</a>
+                <a href="" class="button is-primary is-dark is-medium">Contactar</a>
+              </div>
+            </div>
+            <div class="column is-half">
+              <figure class="image is-4by3">
+                <img src="https://picsum.photos/400/300" alt="Imagen del hero">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- ===== SECCION PROYECTOS ===== -->
+    <section id="proyectos" class="section">
+      <div class="container">
+        <h1 class="title has-text-centered">Proyectos Recientes</h1>
+        <div class="columns is-multiline">
+          <div class="column is-one-third">
+<!-- cards de proyectos -->
+            <div class="card has-text-centered">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img class="is-rounded" src="https://picsum.photos/400/300" alt="Proyecto 1">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Proyecto 1</p>
+                <p class="content">Descripción breve del proyecto 1...</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="card has-text-centered">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img class="is-rounded" src="https://picsum.photos/400/300" alt="Proyecto 2">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Proyecto 2</p>
+                <p class="content">Descripción breve del proyecto 2...</p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="card has-text-centered">
+              <div class="card-image">
+                <figure class="image is-2by1">
+                  <img class="is-rounded" src="https://picsum.photos/400/300" alt="Proyecto 3">
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Proyecto 3</p>
+                <p class="content">Descripción breve del proyecto 3...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- ===== SECCION SERVICIOS ===== -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <h1 class="title has-text-centered">Nuestros Servicios</h1>
+        <div class="columns">
+<!-- cards para descripción de servicios -->
+          <div class="column card has-text-centered">
+            <span class="icon is-large">
+              <i class="fas fa-code fa-3x"></i>
+            </span>
+            <h2 class="subtitle">Desarrollo Web</h2>
+            <p>Ofrecemos desarrollo web personalizado...</p>
+          </div>
+          <div class="column card has-text-centered">
+            <span class="icon is-large">
+              <i class="fas fa-paint-brush fa-3x"></i>
+            </span>
+            <h2 class="subtitle">Diseño Gráfico</h2>
+            <p>Servicios de diseño gráfico para tu marca...</p>
+          </div>
+          <div class="column card has-text-centered">
+            <span class="icon is-large">
+              <i class="fas fa-chart-line fa-3x"></i>
+            </span>
+            <h2 class="subtitle">Marketing Digital</h2>
+            <p>Estrategias de marketing digital efectivas...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- ===== BLOG ===== -->
+    <section id="blog" class="section">
+      <div class="container has-text-centered">
+        <h1 class="title">Blog</h1>
+        <div class="columns is-multiline">
+          <div class="column is-one-third">
+            <article class="message">
+              <div class="message-header">
+                <p>Artículo 1</p>
+              </div>
+              <div class="message-body">
+                Contenido del artículo 1...
+              </div>
+            </article>
+          </div>
+          <div class="column is-one-third">
+            <article class="message">
+              <div class="message-header">
+                <p>Artículo 2</p>
+              </div>
+              <div class="message-body">
+                Contenido del artículo 2...
+              </div>
+            </article>
+          </div>
+          <div class="column is-one-third">
+            <article class="message">
+              <div class="message-header">
+                <p>Artículo 3</p>
+              </div>
+              <div class="message-body">
+                Contenido del artículo 3...
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- ===== NOSOTROS ===== -->
+    <section id="nosotros" class="section">
+      <div class="container-sm">
+        <h1 class="title has-text-centered">Sobre Nosotros</h1>
+        <div class="columns is-vcentered">
+          <div class="column is-half">
+            <figure class="image is-2by1">
+              <img src="https://picsum.photos/400" alt="Nosotros">
+            </figure>
+          </div>
+          <div class="column is-half has-text-centered">
+            <p>Somos una empresa dedicada a ofrecer soluciones digitales...</p>
+            <p>Nuestro equipo está compuesto por profesionales apasionados...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <h1 class="title has-text-centered">Contacto</h1>
+        <div class="column is-half is-offset-one-quarter">
+<!-- Formulario de contacto -->
+          <form class="box">
+            <div class="field">
+              <label class="label">Nombre</label>
+              <div class="control">
+                <input type="text" class="input" placeholder="Tu nombre">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input type="email" class="input" placeholder="Tu email">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Mensaje</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Tu mensaje"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="button is-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+<!-- ===== FOOTER ===== -->
+    <footer id="footer" class="footer has-text-centered">
+      &copy; 2024 Marina Acerbi — Práctica con Bulma. 
+    </footer>
+<!-- ===== SCRIPTS ===== -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
