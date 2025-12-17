@@ -1,5 +1,7 @@
 # Práctica de Maquetación con Bulma
 
+**[🔗 Ver Demo en Vivo (GitHub Pages)] (https://marina993366.github.io/bulma-practica/)**
+
 Proyecto realizado como práctica de maquetación responsive utilizando **Bulma CSS** y **Vite**.
 
 El objetivo de este proyecto fue aplicar conceptos de layout, componentes y diseño responsive sin utilizar CSS personalizado complejo, aprovechando las utilidades que ofrece Bulma.
